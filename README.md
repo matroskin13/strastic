@@ -36,3 +36,7 @@ COPY --from=builder /usr/app/build /var/www
 
 ENTRYPOINT ["/strastic", "--spa"]
 ```
+
+### Changelog
+
+- Add proxу
