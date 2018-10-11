@@ -11,7 +11,6 @@ docker run -p 80:80 -v static:/var/www -e ENV_API_URL=http://example.com -spa ma
 
 ```
 $ curl http://localhost
-curl localhost:3007
 <!doctype html><html lang="en"><head><title>Hello world</title></head><body></body>
 ```
 
