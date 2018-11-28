@@ -5,7 +5,7 @@ Simple way to serve your static application as service.
 ### Example:
 
 ```
-docker run -p 80:80 -v static:/var/www -e ENV_API_URL=http://example.com -spa matroskin13/strastic
+docker run -p 80:80 -v static:/var/www -e ENV_API_URL=http://example.com matroskin13/strastic -spa
 ```
 
 
@@ -34,7 +34,7 @@ RUN yarn run build
 FROM matroskin13/strastic
 COPY --from=builder /usr/app/build /var/www
 
-ENTRYPOINT ["/strastic", "--spa"]
+ENTRYPOINT ["/strastic", "-spa"]
 ```
 
 ### Changelog
